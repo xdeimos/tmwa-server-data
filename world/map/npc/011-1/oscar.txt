@@ -480,6 +480,7 @@ L_GetReward:
         goto L_InventoryFull;
     set @inventorylist_count, 0;
     getitem "GoldenDeliciousApple", 1;
+    getitem "CrozeniteFour-LeafAmulet", 1;
     set @halloween_year, gettime(7) - 2000 + 1;
     set Quest_Halloween, 0;
     callsub S_Update_Annual_Quest;
@@ -500,6 +501,7 @@ L_GetSlap:
         goto L_InventoryFull;
     set @inventorylist_count, 0;
     getitem "CandyPumpkin", 5;
+    getitem "BrokenFour-LeafAmulet", 1;
     set @halloween_year, gettime(7) - 2000 + 1;
     set Quest_Halloween, 0;
     callsub S_Update_Annual_Quest;
